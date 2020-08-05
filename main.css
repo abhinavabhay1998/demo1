@@ -1,0 +1,50 @@
+body{
+   
+background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+span{
+    font-family: monospace;
+    text-align: center;
+    color:white;
+}
+
+
+#txt{
+    font-size: 60px;
+    /*border:2px solid white;*/
+    border-radius: 5px;
+    color:white;
+    position: relative;
+    margin-left: 515px;
+}
+
+#inst{
+     border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+table{
+     font-size: 40px;
+         color:white;
+    font-family: monospace;
+}
+
+marquee{
+    font-family: monospace;
+    font-size: 40px;
+    color:white;
+    
+}
+
+#signin:hover
+{
+    cursor:help;
+}
+

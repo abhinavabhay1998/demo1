@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>َLogin page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    
+    <script>
+        function log()
+        {
+            var u=  document.getElementById("user").value;
+            var p=  document.getElementById("pass").value;
+            if(u=="abhinav" && p== "svit")
+                {
+                    alert ("login suucessful");
+                    window.open("ssign.html");
+                }
+            else
+                {
+                   alert("Invalid Username and Password")
+                }  
+        }
+        
+    </script>
+  <body>
+      
+
+<form class="box" action="index.html" method="post">
+  <h1>Login</h1>
+  <img src="svit.png" width="200" height="200">
+  <input type="text" id="user" placeholder="Username" autocomplete="off" required>
+  <input type="password" id="pass" placeholder="Password" required>
+<input type="submit" name="" value="Login" onclick="log()">
+    <br>
+    <!-- <label >Don't have an account?</label>&nbsp;<a href="sign.html">Sign Up</a> -->
+   
+</form>
+   
+
+<script type="text/javascript"></script>
+  </body>
+</html>

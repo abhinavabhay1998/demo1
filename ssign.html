@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="signStyle.css">
+</head>
+<script>
+    function ret()
+    {
+        alert( "YOU WILL BE LOGGED OUT ");
+        location.replace("main.php");
+
+    }
+    
+   /* function read()
+    {
+        alert("hello");
+        var id= document.getElementById("sid").value;
+        var n= document.getElementById("name").value;
+        var e= document.getElementById("email").value;
+        var p= document.getElementById("pass").value;
+        var d= document.getElementById("deg").value;
+        
+        $nlink = mysqli_connect("localhost", "root", "","d_login");
+ 
+        if($nlink === false)
+        {
+            alert ("connectio not");
+                die("ERROR: Could not connect. " . mysqli_connect_error());
+        }
+        $sql ="INSERT INTO user(id, name,email,pass,deg)
+            VALUES ('$id','$n','$e','$p','$d')";
+            $link->query($sql) ;
+        alert("user added sucesssfully");
+    }*/
+    
+</script>
+<body>
+    <form class="box" action="http://localhost/abhinavn/ssign.php" method="post"  name="form">
+        
+    <h2 style="color: white">Add new user?</h2>
+       
+    <input type="text" id="sid" name="sid" placeholder="Staff ID" required  autocomplete="off">
+    
+    
+    <input type="text" id="name" name="name" placeholder="Name" required autocomplete="off">
+    
+   
+<!--    <input type="text" placeholder="Last Name">-->
+    
+    
+    <input type="email" id="email" name="email" placeholder="Email ID" required autocomplete="off">
+    
+    
+    <input type="password" id="pass"  name="pass" placeholder="Password" required autocomplete="off">
+    
+   
+<!--        <input type="password" placeholder="Confirm Password">-->
+    
+    <input type="text" id="deg" name="deg" placeholder="Designation" required autocomplete="off">
+            
+    
+    <button>Reset</button>
+        
+    <button onclick="read()">Submit</button>
+    
+    </form>
+
+<div id="extra">
+    <img src="login.png" width="100px" height="100px"><br>
+<!--    <label>Username</label><br>-->
+    <label id="l3" style="font-family: monospace;font-size:22px; width: 100px;" onclick="ret()">Sign Out</label><br>
+    </div>
+    
+    <center style="margin-top:150px; margin-left:200px;">
+
+        <label id="l1" style="font-size: 28px;"><u>Who's in library</u></label>
+        <br><br>
+       <a href="teach_login_status.php"> <button>Staff records</button></a> &nbsp;&nbsp; <a href="login_status.php"><button>Student records</button></a>
+        <br><br><br><br>
+        <label id="l2" style="font-size: 28px;"><u>Manage</u></label><br><br>
+         <a href="teach_logout_status.php"><button>Staff records</button></a> &nbsp;&nbsp;
+        <a href="logout_status.php"><button>Student records</button></a>
+        <br><br><br><br>
+
+        <label id="l4" style="font-size: 28px;"><u>Search</u></label><br><br>
+        <form>
+        <select required="">
+            <option></option>
+            <option>Staff</option>
+            <option>Students</option>
+        </select>
+        &nbsp;&nbsp;
+        <input type="date" name="dt" id="dat">&nbsp;&nbsp;
+        <input type="submit" id="srch" value="Search">
+        </form>
+    </center>
+    
+
+</body>
+
+</html>
